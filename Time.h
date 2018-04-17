@@ -19,6 +19,10 @@
 	 * @version 03
 	 * @date 17/04/2018 Wade Davidson, added set and get for minutes and tested.
 	 *
+	 * @author Wade Davidson
+	 * @version 04
+	 * @date 17/04/2018 Wade Davidson, added set and get for hours and tested.
+	 *
 	 * @todo Everything
 	 *
 	 * @bug None yet....
@@ -62,8 +66,21 @@ class Time
             * @return unsigned
             */
         unsigned GetMinutes() const;
-
+            /**
+            * @brief  Function to set hours
+            *
+            * Retruns true if successful
+            *
+            * @param  hrs - set it to this
+            * @pre must be between 0 and 23 inclusive
+            * @return bool
+            */
         bool SetHours(const unsigned hrs);
+            /**
+            * @brief  Retrieves hours for you
+            *
+            * @return unsigned
+            */
         unsigned GetHours() const;
 
     private:

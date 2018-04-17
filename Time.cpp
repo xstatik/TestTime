@@ -41,8 +41,14 @@ unsigned Time::GetMinutes() const
 
 bool Time::SetHours(const unsigned hrs)
 {
-    m_hours = hrs;
-}
+    if(hrs < 24 && hrs >= 0)
+    {
+        m_hours = hrs;
+        return true;
+    }
+
+    return false;
+ }
 
 unsigned Time::GetHours() const
 {
