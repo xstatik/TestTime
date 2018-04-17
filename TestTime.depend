@@ -1,10 +1,10 @@
 # depslib dependency file v1.0
-1523955019 source:c:\codeblocks\#ict283\week06\week06\testtime\time.cpp
+1523955995 source:c:\codeblocks\#ict283\week06\week06\testtime\time.cpp
 	"Time.h"
 
-1523954561 c:\codeblocks\#ict283\week06\week06\testtime\time.h
+1523955996 c:\codeblocks\#ict283\week06\week06\testtime\time.h
 
-1523954819 source:c:\codeblocks\#ict283\week06\week06\testtime\main.cpp
+1523955293 source:c:\codeblocks\#ict283\week06\week06\testtime\main.cpp
 	"Time.h"
 	"TimeUtils.h"
 	<iostream>

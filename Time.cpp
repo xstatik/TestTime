@@ -14,20 +14,24 @@ bool Time::SetSeconds(const unsigned sec)
         m_seconds = sec;
         return true;
     }
-    else
-    {
-        return false;
-    }
-}
+
+    return false;
+ }
 
 unsigned Time::GetSeconds() const
 {
     return m_seconds;
 }
 
-bool Time::SetMinutes(const unsigned mnut)
+bool Time::SetMinutes(const unsigned minut)
 {
-    m_minutes = mnut;
+    if(minut < 60 && minut >= 0)
+    {
+        m_minutes = minut;
+        return true;
+    }
+
+    return false;
 }
 
 unsigned Time::GetMinutes() const

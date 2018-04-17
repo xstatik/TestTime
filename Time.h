@@ -15,6 +15,10 @@
 	 * @version 02
 	 * @date 17/04/2018 Wade Davidson, added set and get for seconds and tested.
 	 *
+	 * @author Wade Davidson
+	 * @version 03
+	 * @date 17/04/2018 Wade Davidson, added set and get for minutes and tested.
+	 *
 	 * @todo Everything
 	 *
 	 * @bug None yet....
@@ -42,11 +46,24 @@ class Time
             * @return unsigned
             */
         unsigned GetSeconds() const;
-
-        bool SetMinutes(const unsigned sec);
+            /**
+            * @brief  Function to set minutes
+            *
+            * Retruns true if successful
+            *
+            * @param  minut - set it to this
+            * @pre must be between 0 and 59 inclusive
+            * @return bool
+            */
+        bool SetMinutes(const unsigned minut);
+            /**
+            * @brief  Retrieves minutes for you
+            *
+            * @return unsigned
+            */
         unsigned GetMinutes() const;
 
-        bool SetHours(const unsigned sec);
+        bool SetHours(const unsigned hrs);
         unsigned GetHours() const;
 
     private:
