@@ -1,3 +1,7 @@
+//Time.h
+//Author: Wade Davidson
+//Stores a time
+
 #ifndef TIME_H
 #define TIME_H
 
@@ -28,8 +32,6 @@
 	 * @bug None yet....
 	 */
 
-
-
 class Time
 {
     public:
@@ -43,7 +45,7 @@ class Time
             * @pre must be between 0 and 59 inclusive
             * @return bool
             */
-        bool SetSeconds(const unsigned sec);
+        bool SetSeconds(unsigned sec);
             /**
             * @brief  Retrieves seconds for you
             *
@@ -59,7 +61,7 @@ class Time
             * @pre must be between 0 and 59 inclusive
             * @return bool
             */
-        bool SetMinutes(const unsigned minut);
+        bool SetMinutes(unsigned minut);
             /**
             * @brief  Retrieves minutes for you
             *
@@ -75,7 +77,7 @@ class Time
             * @pre must be between 0 and 23 inclusive
             * @return bool
             */
-        bool SetHours(const unsigned hrs);
+        bool SetHours(unsigned hrs);
             /**
             * @brief  Retrieves hours for you
             *
@@ -84,8 +86,11 @@ class Time
         unsigned GetHours() const;
 
     private:
+            ///Stores seconds
         unsigned m_seconds;
+            ///Stores minutes
         unsigned m_minutes;
+            ///Stores hours
         unsigned m_hours;
 };
 

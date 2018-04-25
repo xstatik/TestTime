@@ -4,17 +4,23 @@
 
 using namespace std;
 
-void Test01();
-void Test02();
-void Test03();
-void Test04();
+void Test01();//Test default constructor
+void Test02();//Test SetSeconds
+void Test03();//Test SetMinutes
+void Test04();//Test SetHours
+void Test05();//Test GetSeconds
+void Test06();//Test GetMinutes
+void Test07();//Test GetHours
 
 int main()
 {
-    Test01();
-    Test02();
-    Test03();
-    Test04();
+    Test01();//Test default constructor
+    Test02();//Test SetSeconds
+    Test03();//Test SetMinutes
+    Test04();//Test SetHours
+    Test05();//Test GetSeconds
+    Test06();//Test GetMinutes
+    Test07();//Test GetHours
 
     return 0;
 }
@@ -89,4 +95,34 @@ void Test04()//Test SetHours
     printTime(testTime);
     testTime.SetHours(0);
     printTime(testTime);
+}
+
+void Test05()//Test GetSeconds
+{
+    cout << "----------TEST05----------" << endl;
+
+    Time testTime;
+
+    testTime.SetSeconds(23);
+    cout << testTime.GetSeconds() << endl;
+}
+
+void Test06()//Test GetMinutes
+{
+    cout << "----------TEST06----------" << endl;
+
+    Time testTime;
+
+    testTime.SetMinutes(34);
+    cout << testTime.GetMinutes() << endl;
+}
+
+void Test07()//Test GetHours
+{
+    cout << "----------TEST07----------" << endl;
+
+    Time testTime;
+
+    testTime.SetHours(10);
+    cout << testTime.GetHours() << endl;
 }
